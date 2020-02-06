@@ -16,7 +16,7 @@ public class FrequencyChart {
     }
     public void count(int val){
         for(int i = 10; i <= 100; i++)
-        findBounds()
+        findBounds();
     }
 
     }
