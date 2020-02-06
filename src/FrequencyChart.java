@@ -15,8 +15,14 @@ public class FrequencyChart {
         return "yeet";
     }
     public void count(int val){
-        if(val >= 1 && val <= 10){
+        for(int i = 10; i <= 100; i++)
+        findBounds()
+    }
 
+    }
+    public void findBounds(int val, int a, int b){
+        if(val >= 1 && val <= 10){
+            count[0]++;
         }
     }
 
@@ -30,13 +36,13 @@ public class FrequencyChart {
 
         int[] data = new int[size];
 
-        System.out.println("Enter each datum, followed by an enter");
+        System.out.println("Enter each datum, followed by an enter.");
         int val = 0;
-        for(int i = 0; i < data.length; i++){
+        for(int i = 0; i < data.length -1; i++){
             val = scan.nextInt();
             data[i] = val;
         }
-        FrequencyChart chart = new FrequencyChart();
+        FrequencyChart chart = new FrequencyChart(data);
         System.out.println(chart.makeChart());
     }
 }
