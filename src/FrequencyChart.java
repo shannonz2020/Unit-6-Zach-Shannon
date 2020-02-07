@@ -14,12 +14,12 @@ public class FrequencyChart {
 
         return "yeet";
     }
-    public void count(int val){
+    /*public void count(int val){
         for(int i = 10; i <= 100; i++)
         findBounds();
     }
 
-    }
+    }*/
     public void findBounds(int val, int a, int b){
         if(val >= 1 && val <= 10){
             count[0]++;

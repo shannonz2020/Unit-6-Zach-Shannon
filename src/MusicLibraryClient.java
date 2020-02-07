@@ -11,18 +11,16 @@ public class MusicLibraryClient {
 
             System.out.println(myLibrary);
 
-            System.out.println("+++++++++++++++++++++++++++++++++++++++");
+
 
             myLibrary.doubleSize();
 
             System.out.println(myLibrary);
 
-            System.out.println("+++++++++++++++++++++++++++++++++++++++");
 
             myLibrary.remove(1);
             myLibrary.add(a3);
             System.out.println(myLibrary);
 
-            System.out.println("+++++++++++++++++++++++++++++++++++++++");
         }
 }
