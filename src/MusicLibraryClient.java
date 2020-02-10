@@ -8,9 +8,9 @@ public class MusicLibraryClient {
 
             myLibrary.add(a1);
             myLibrary.add(a2);
+            myLibrary.add(a3);
 
-            System.out.println(myLibrary);
-
+            /*System.out.println(myLibrary);
 
 
             myLibrary.doubleSize();
@@ -19,8 +19,11 @@ public class MusicLibraryClient {
 
 
             myLibrary.remove(1);
-            myLibrary.add(a3);
-            System.out.println(myLibrary);
 
+            System.out.println(myLibrary);*/
+
+            int libr = myLibrary.findTitle("Second");
+
+            System.out.println(myLibrary.getAlbum(libr));
         }
 }

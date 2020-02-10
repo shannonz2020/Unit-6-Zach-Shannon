@@ -46,4 +46,47 @@ public class MusicLibrary {
         }
         return result;
     }
+
+    public int findTitle(String title){
+        for(int i = 0; i < albumList.length; i++){
+            if(title.equals(albumList[i].getAlbumName())){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int findArtist(String findArtist){
+        for(int i = 0; i < albumList.length; i++){
+            if(findArtist.equals(albumList[i].getArtistName())){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public Album getAlbum(int index){
+        if(index >= 0 && index < albumList.length){
+            return albumList[index];
+        }else{
+            return null;
+        }
+    }
+
+    public sortByTitle(){
+        int temp, first;
+        for(int i = 0; i < albumList.length -1; i++){
+            for(int j = 0; i < albumList.length; i++){
+                if(albumList[i].getAlbumName().compareTo(albumList[j].getAlbumName()) < 0 ){
+                    temp = i;
+                }else{
+                    temp = j;
+                }
+            }
+        }
+    }
+
+    public sortByArtist(){
+
+    }
 }
