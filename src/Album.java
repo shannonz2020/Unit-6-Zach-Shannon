@@ -28,8 +28,7 @@ public class Album {
     }
 
     public String toString(){
-        return "Album name: " + albumName + "\nArtist name: "
-                + artistName + "\n" + numSongs + " songs\n" + numMinutes + " mins";
+        return "Album: " + albumName + " | Artist: " + artistName + " | " + numSongs + " songs | " + numMinutes + " mins";
         //return (albumName + " by " + artistName + " / " + numSongs + " songs / Playtime: " + numMinutes + " mins");
     }
 }

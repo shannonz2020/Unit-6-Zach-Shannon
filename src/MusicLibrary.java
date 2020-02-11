@@ -40,8 +40,7 @@ public class MusicLibrary {
         String result = "";
         for(int i = 0; i < albumList.length - 1; i++){
             if(albumList[i] != null){
-                result+= albumList[i];
-                result+= "\n******************************************\n";
+                result+= albumList[i] + "\n";
             }
         }
         return result;
@@ -73,20 +72,52 @@ public class MusicLibrary {
         }
     }
 
-    public sortByTitle(){
-        int temp, first;
+    public void sortByTitle(){
+        Album temp;
+        int min;
         for(int i = 0; i < albumList.length -1; i++){
-            for(int j = 0; i < albumList.length; i++){
-                if(albumList[i].getAlbumName().compareTo(albumList[j].getAlbumName()) < 0 ){
-                    temp = i;
-                }else{
-                    temp = j;
+            min = i;
+            for(int j = i; j < albumList.length; j++){
+                if(albumList[i] != null && albumList[j] != null){
+                    if (albumList[j].getAlbumName().compareTo(albumList[min].getAlbumName()) < 0) {
+                        min = j;
+                    }
                 }
             }
+            temp = albumList[min];
+            albumList[min] = albumList[i];
+            albumList[i] = temp;
         }
     }
 
-    public sortByArtist(){
+    public void sortByArtist(){
+        for(int i = 1; i < albumList.length; i++){
+            Album key = albumList[i];
+            int position = i;
+            if(albumList[i] != null) {
+                while (position > 0 && albumList[position - 1].getArtistName().compareTo(key.getArtistName()) > 0) {
+                    albumList[position] = albumList[position - 1];
+                    position--;
+                }
+                albumList[position] = key;
+            }
+        }
+    }
+    public int searchByArtist(String artist) {
+        sortByArtist();
+        int low = 0, high = albumList.length-1, middle = (low + high)/2;
 
+        while (!albumList[middle].getArtistName().equals(artist) && low <= high){
+            if (artist.compareTo(albumList[middle].getArtistName()) < 0)
+                high = middle - 1;
+            else
+                low = middle + 1;
+            middle = (low + high)/2;
+        }
+
+        if (albumList[middle].getArtistName().equals(artist))
+            return middle;
+        else
+            return -1;
     }
 }
