@@ -117,21 +117,5 @@ public class MyArray2DExplorer {
         }
         return output;
     }
-    public static void removeZeros(ArrayList<Integer> list){
-        for(int i = 0; i < list.length; i++){
-            if(list.get(i) == 0){
-                list.remove(i--);
-            }
-        }
-    }
-    public int countLetters(ArrayList list){
-        int returnValue = 0;
-        for(int i = 0; i < list.length; i++){
-            for(int j = 0; i < ArrayList.get(i).length(); j++){
-                returnValue++;
-            }
-        }
-        return returnValue;
-    }
 
 }
