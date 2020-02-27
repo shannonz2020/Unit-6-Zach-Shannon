@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 public class ArrayListTester{
     public static void main(String[] args) {
         System.out.println("Test Remove Zeros");
@@ -15,13 +17,13 @@ public class ArrayListTester{
 
         System.out.println();
 
-        /*System.out.println("Test keyPosition: find a 1");
+        System.out.println("Test keyPosition: find a 1");
         System.out.println(nums);
         System.out.println("Expected: 2 \n Actual: " + findPosition(1, nums));
 
         System.out.println();
 
-        System.out.println("Test parse into array");
+        /*System.out.println("Test parse into array");
         System.out.println("Expected: [W, e, s, t, , L, i, n, n] \n Actual: " + parseIntoArrayList("West Linn"));
 
         System.out.println();
@@ -45,25 +47,34 @@ public class ArrayListTester{
         System.out.println("# of Quarters = " + myPurse.count(new Coin(.25, "quarter")));
         System.out.println("Smallest Coin = " + myPurse.findSmallest());
         System.out.println("Total of Purse = $" + myPurse.getTotal());*/
-
-        public static void removeZeros(ArrayList<Integer> list){
-            for(int i = 0; i < list.length; i++){
-                if(list.get(i) == 0){
-                    list.remove(i--);
-                }
+    }
+    public static void removeZeros(ArrayList<Integer> list){
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i) == 0){
+                list.remove(i--);
             }
         }
-        public int countLetters(ArrayList<String> list){
-            int returnValue = 0;
-            for(int i = 0; i < list.length; i++){
-                for(int j = 0; i < ArrayList.get(i).length() -1; j++){
-                    returnValue++;
-                }
+    }
+    public static int countLetters(ArrayList<String> list){
+        int returnValue = 0;
+        for(int i = 0; i < list.size(); i++){
+            for(int j = 0; j < list.get(i).length(); j++){
+                returnValue++;
             }
-            return returnValue;
         }
-        public int findPosition(int keyValue, ArrayList<Integer> list){
+        return returnValue;
+    }
+    public static int findPosition(int keyValue, ArrayList<Integer> list){
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i) == keyValue){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static ArrayList parseIntoArrayList(String input){
+        ArrayList output;
+        for(int i = 0; i < )
 
-        }
     }
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e613f5d8-48d4-462c-8bc3-1a6565d781a3" name="Default Changelist" comment="" />
+    <list default="true" id="e613f5d8-48d4-462c-8bc3-1a6565d781a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayListTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListTester.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +39,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ColorChooser">
+  <component name="RunManager" selected="Application.ArrayListTester">
+    <configuration name="ArrayListTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayListTester" />
+      <module name="Unit-6-Zach-Shannon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ColorChooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ColorChooser" />
       <module name="Unit-6-Zach-Shannon" />
@@ -60,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayListTester" />
         <item itemvalue="Application.ColorChooser" />
         <item itemvalue="Application.MyArray2DExplorer" />
         <item itemvalue="Application.MusicLibraryClient" />
@@ -84,30 +95,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="621" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1582220267609" />
-    <state width="1557" height="174" key="GridCell.Tab.0.bottom" timestamp="1582221259771">
+    <state width="1557" height="174" key="GridCell.Tab.0.bottom" timestamp="1582825266478">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582221259771" />
-    <state width="1557" height="174" key="GridCell.Tab.0.center" timestamp="1582221259771">
+    <state width="1557" height="174" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582825266478" />
+    <state width="1557" height="174" key="GridCell.Tab.0.center" timestamp="1582825266474">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582221259771" />
-    <state width="1557" height="174" key="GridCell.Tab.0.left" timestamp="1582221259771">
+    <state width="1557" height="174" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582825266474" />
+    <state width="1557" height="174" key="GridCell.Tab.0.left" timestamp="1582825266474">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582221259771" />
-    <state width="1557" height="174" key="GridCell.Tab.0.right" timestamp="1582221259771">
+    <state width="1557" height="174" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582825266474" />
+    <state width="1557" height="174" key="GridCell.Tab.0.right" timestamp="1582825266478">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="174" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582221259771" />
-    <state x="301" y="72" key="SettingsEditor" timestamp="1581698404670">
+    <state width="1557" height="174" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582825266474" />
+    <state x="301" y="72" key="SettingsEditor" timestamp="1582825379567">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1581698404670" />
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582825379567" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1582825445191">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1600.860@0.0.1600.860" timestamp="1582825445191" />
     <state x="488" y="276" width="707" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581698402967">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="488" y="276" width="707" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860@0.0.1600.860" timestamp="1581698402967" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1582823925939">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582823925939" />
   </component>
   <component name="masterDetails">
     <states>
